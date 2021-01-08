@@ -6,11 +6,14 @@ class Car:
         self.windows=windows,
         print(f"Created instance of a car for {maker} {model}")
 
+     def printMaker(self):
+        return self.maker
+
 
 car1=Car("Benz", "ML250")
 car2=Car("Benz", "ML250")
 car3=Car("BNW", "x6",4,5)
 car4=Car("Honda", "Civic Coupe",4,4)
 
-
+print(car3.printMaker())
 
