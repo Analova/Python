@@ -7,7 +7,10 @@ class Car:
         self.total=5
         # print(f"Created instance of a car for {maker} {model}")
 
-     
+     def __repr__(self):
+        return f"Maker:{self.maker} model:{self.model} wheels:{self. wheels} windows:{self.windows}"
+
+
      total=20
 
      @classmethod
@@ -38,7 +41,11 @@ car2=Car("Benz", "ML250")
 car3=Car("BNW", "x6",4,5)
 car4=Car("Honda", "Civic Coupe",4,4)
 
-print(Car.testing())
+print(car4)
+
+
+# Claas methods
+# print(Car.testing())
 # print(car1.printMaker())
-print(car1.testing())
+# print(car1.testing())
 
