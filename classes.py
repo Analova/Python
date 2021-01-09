@@ -10,8 +10,20 @@ class Car:
      
      total=20
 
+     @classmethod
+     def testing(cls):
+         print("Class ======================")
+         print(cls)
+         print(cls.total)
+         print("Class ======================")
+
+
      def printMaker(self):
+         print("Instance ======================")
+         print(self)
          return self.maker
+         print(Car.testing())
+         print("Instance ======================")
 
      def add(self,number):
          Car.total+=number
@@ -19,10 +31,14 @@ class Car:
          return f"Class:{Car.total} Instance:{self.total}"
 
 
+
+
 car1=Car("Benz", "ML250")
 car2=Car("Benz", "ML250")
 car3=Car("BNW", "x6",4,5)
 car4=Car("Honda", "Civic Coupe",4,4)
 
-print(car1.add(10))
+print(Car.testing())
+# print(car1.printMaker())
+print(car1.testing())
 
